@@ -23,9 +23,9 @@ app.use("/api", router);
 app.listen(port, async () => {
   try {
     await connectToMongo;
-    console.log("Connect To MongoDb");
+    console.log("Connected To MongoDb");
   } catch (error) {
     console.log(error);
   }
-  console.log(`Listign on port ${port}`);
+  console.log(`Listening on port ${port}`);
 });
